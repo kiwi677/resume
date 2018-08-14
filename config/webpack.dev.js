@@ -42,6 +42,7 @@ module.exports = {
                 test: /\.(jpg|png|svg|gif)$/,
                 //多个loader需要从后到前进行解析(大于10kb打包)
                 use: ["url-loader?limit=10&name=images/[name]-[hash:8].[ext]"]
+                // use: ["url-loader?limit=10&name=images/[name].[ext]"]
             },
             //JS loaders
             {
